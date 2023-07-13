@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Workout Planner</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <h1 class="company-name">Workout Planner</h1>
+    </div>
+    <nav class="header-right">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#subscriptionPlans">Subscription Plans</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h2 style="color: white;">Get Fit. Stay Fit.</h2>
+      <form id="userForm">
+        <label for="weightGoal">Weight Goal:</label>
+        <select id="weightGoal">
+          <option value="lose">Lose Weight</option>
+          <option value="maintain">Maintain Weight</option>
+          <option value="gain">Gain Weight</option>
+        </select>
+        <br>
+        <button type="submit"><i class="fas fa-dumbbell"></i> Get Subscription Plans</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="subscriptionPlans" class="hidden">
+    <div class="container">
+      <h2>Subscription Plans</h2>
+      <div class="plans-container">
+        <div class="plan">
+          <h3>Basic Plan</h3>
+          <p class="price">$9.99/month</p>
+          <ul>
+            <li>Access to basic workout plans</li>
+            <li>Email support</li>
+          </ul>
+          <button class="subscribe">Subscribe</button>
+        </div>
+        <div class="plan">
+          <h3>Pro Plan</h3>
+          <p class="price">$19.99/month</p>
+          <ul>
+            <li>Access to advanced workout plans</li>
+            <li>Email and phone support</li>
+            <li>Personalized training program</li>
+          </ul>
+          <button class="subscribe">Subscribe</button>
+        </div>
+        <div class="plan">
+          <h3>Premium Plan</h3>
+          <p class="price">$29.99/month</p>
+          <ul>
+            <li>Access to all workout plans</li>
+            <li>Email, phone, and chat support</li>
+            <li>Personalized training program</li>
+            <li>Nutrition guidance</li>
+          </ul>
+          <button class="subscribe">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
